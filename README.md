@@ -125,4 +125,15 @@ streamlit run app.py
 ```
 
 <br>
-<p align="center">Built and optimized for scalable technical recruitment.</p>
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are very welcome! 
+Feel free to check out the [Issues page](https://github.com/srikaran3004/RecruitIQ/issues) if you want to contribute or have any ideas on how to improve this project.
+
+<br>
+<p align="center">
+  <b>Built with ❤️ for the future of recruitment.</b>
+</p>
