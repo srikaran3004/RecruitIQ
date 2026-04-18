@@ -3,7 +3,7 @@
   <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PostgreSQL-Dark.svg" height="40">
   <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Python-Dark.svg" height="40">
   <br>
-  ResumeAI: Enterprise Resume Intelligence System
+  RecruitIQ: Enterprise Resume Intelligence System
 </h1>
 
 <p align="center">
@@ -12,10 +12,10 @@
 
 ## ✨ Why This System is Production-Ready & Unique
 
-Most classic AI resume parsers are simple, synchronous scripts that block the server until a document is completely processed. They rely heavily on brittle regular expressions or basic keyword string matching. **ResumeAI** changes the paradigm:
+Most classic AI resume parsers are simple, synchronous scripts that block the server until a document is completely processed. They rely heavily on brittle regular expressions or basic keyword string matching. **RecruitIQ** changes the paradigm:
 
 1. **True Asynchronous Architecture:** It implements a **Celery + Redis distributed task queue**. File uploads are lightning fast, queueing the heavy AI extraction and embedding generation tasks to background worker nodes. This means it can horizontally scale to handle thousands of concurrent resume uploads without ever timing out user UI requests.
-2. **Resilient Blob Storage Integration:** Instead of cluttering the application server with generated files, ResumeAI safely routes parsed files to **Cloudinary object storage**, maintaining web-server statelessness—a core requirement for modern containerized deployments on Kubernetes or AWS ECS.
+2. **Resilient Blob Storage Integration:** Instead of cluttering the application server with generated files, RecruitIQ safely routes parsed files to **Cloudinary object storage**, maintaining web-server statelessness—a core requirement for modern containerized deployments on Kubernetes or AWS ECS.
 3. **Structured Data via Generative AI:** Replaces rigid Regex with **Google's Gemini 2.5 Flash** to consistently cast unstructured text into deterministic JSON objects with high accuracy, dynamically parsing even the most chaotic resume formats.
 4. **Semantic Vector Search (pgvector):** Built natively around a **RAG (Retrieval-Augmented Generation) Architecture**. Candidate experience is chunked with `all-MiniLM-L6-v2` dense vectors and mapped into a **Neon Serverless Postgres** database using the `pgvector` extension. This enables human-like search queries (e.g., *"Find someone with distributed systems experience"*) instead of relying on exact keyword extraction.
 5. **Glassmorphic Interactive UI:** The frontend leverages an advanced, fully customized **Streamlit** dashboard integrating smooth dark mode layouts, beautiful CSS transitions, gradients, and semantic agent interactions.

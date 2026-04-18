@@ -15,7 +15,7 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 print("📥 API: Loading Local Search Model...")
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
-app = FastAPI(title="Resume Intelligence System")
+app = FastAPI(title="RecruitIQ")
 
 @app.get("/")
 def read_root():

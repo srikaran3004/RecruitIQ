@@ -6,7 +6,7 @@ import base64
 API_URL = "http://127.0.0.1:8000"
 
 st.set_page_config(
-    page_title="ResumeAI - Enterprise Applicant Tracking", 
+    page_title="RecruitIQ - Enterprise Applicant Tracking", 
     page_icon="🧠", 
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -135,7 +135,7 @@ h2, h3 {
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1>🧠 ResumeAI System</h1>", unsafe_allow_html=True)
+st.markdown("<h1>🧠 RecruitIQ System</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; color: #94a3b8; font-size: 1.2rem; margin-bottom: 2rem;'>Intelligent Candidate Retrieval & Semantic Engine</p>", unsafe_allow_html=True)
 
 # Tabs
